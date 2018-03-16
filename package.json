@@ -6,7 +6,7 @@
     "url": "http://tomasz.janczuk.org",
     "twitter": "tjanczuk"
   },
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "Auth0 Extend Samples",
   "scripts": {
     "sec-deps": "nsp check --warn-only",
