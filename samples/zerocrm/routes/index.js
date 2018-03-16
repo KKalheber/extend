@@ -47,7 +47,9 @@ router.get('/settings', function(req, res, next) {
 });
 
 router.get('/settings-old', function(req, res, next) {
-    return res.render('settings_old', {});
+    return res.render('settings_old', {
+        nodeVersion: req.query.node
+    });
 });
 
 router.post('/api/leads', bodyParser.json(), function (req, res, next) {
