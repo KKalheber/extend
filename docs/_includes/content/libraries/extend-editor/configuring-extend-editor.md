@@ -660,8 +660,8 @@ var options = {
 ##### Production
 
 - https://cdn.auth0.com/auth0-extend/1/extend-editor.js
-- https://cdn.auth0.com/auth0-extend/1.1/extend-editor.js
-- https://cdn.auth0.com/auth0-extend/1.1.1/extend-editor.js
+- https://cdn.auth0.com/auth0-extend/1.2/extend-editor.js
+- https://cdn.auth0.com/auth0-extend/1.2.16/extend-editor.js
 
 ##### Development
 
