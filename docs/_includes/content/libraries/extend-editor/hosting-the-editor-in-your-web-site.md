@@ -25,6 +25,8 @@ Extend Editor can be hosted within your own web site and customized to provide y
 </html>
 ```
 
+The URL used above (https://cdn.auth0.com/auth0-extend/1/extend-editor.js) represents the **latest** version of the editor available in the 1.x version. You can specify a specific version by including the full URL. For example: https://cdn.auth0.com/auth0-extend/1.2.6/extend-editor.js. You can also request a specific patch level: https://cdn.auth0.com/auth0-extend/1.2/extend-editor.js. This version would automatically upgrade to 1.2.7 when and if it becomes available. You can keep track of the current version, and see fixes, at our [changelog](https://auth0.com/extend/editor/changelog).
+
 In the typical situation, the Extend Editor would be presented to an authenticated user from the administration section of your web site, and the **{webtask_container}** and **{webtask_token}** would be specific to the tenant in your system they are managing. In a more general case, the **{host_url}**, **{webtask_container}**, and **{webtask_token}** are specific to the [selected isolation scope](#mapping-isolation-requirements-onto-webtask-tokens). 
 
 [See Express handler that renders the page with Extend Editor](https://github.com/auth0/extend/blob/master/samples/zerocrm/routes/index.js#L22).  
