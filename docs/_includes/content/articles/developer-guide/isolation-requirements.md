@@ -1,6 +1,6 @@
 ## Isolation Requirements
 
-If you are operating a multi-tenant SaaS platform and use Auth0 Extend to allow your customers to extend your product with custom code, one key decision you need to make is related to the scope of isolation for executing extensions. Scope of isolation implies the following guarnatees in the Auth0 Extend system: 
+If you are operating a multi-tenant SaaS platform and use Auth0 Extend to allow your customers to extend your product with custom code, one key decision you need to make is related to the scope of isolation for executing extensions. Scope of isolation implies the following guarantees in the Auth0 Extend system: 
 
 1. Two extensions executing in different scopes of isolation are guaranteed to be isolated in terms of in-memory state, access to disk, and execution integrity (e.g. one extension cannot affect the processing of the other extension). They are also guaranteed their fair share of computing resources (CPU, memory). 
 
