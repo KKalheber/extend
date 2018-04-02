@@ -10,7 +10,7 @@ For example, if user A and user B of your system both author extension code, you
 
 The question you need to ask yourself in the context of your platform is: what is the concept in my platform which defines a trust or isolation boundary for data and processing? Here are a few possible answers and considerations: 
 
-1. **Tenant**. For majority of multi-tenant SaaS platforms, a tenant of the platform is at the same time the most granular trust and isolation boundary. A tenant can be a subscriber, an account, an organziation, or even an individual user. As long as all configuration and secret data can be shared across code working on behalf of a specific tenant, but not shared with code working on behalf of other tenants, a tenant is likely your desired scope of isolation for Auth0 Extend extensions.  
+1. **Tenant**. For majority of multi-tenant SaaS platforms, a tenant of the platform is at the same time the most granular trust and isolation boundary. A tenant can be a subscriber, an account, an organization, or even an individual user. As long as all configuration and secret data can be shared across code working on behalf of a specific tenant, but not shared with code working on behalf of other tenants, a tenant is likely your desired scope of isolation for Auth0 Extend extensions.  
 
 2. **User**. In some multi-tenant systems, a tenant represents a high level account or organization, and there are many users or administrators who are part of it. If your system allows all those users to create their own extensions, and it is important that they are isolated from one another, a user may be the desired scope of isolation. 
 
