@@ -90,6 +90,14 @@ Option | Description
 [right](#expandright-string) | Determiens which panel will be expanded at right. Allowed value `runner`.
 [bottom](#expandbottom-string) | Determines which panel will be expanded at bottom. Allowed value `logs`.
 
+### Integration Options
+
+Determines which external integrations are enabled.
+
+Option | Description
+------------ | -------------
+github | If set to true, than the user can connect to GitHub and select a file there for use as their extension. Defaults to false.
+
 ## Configuration Options
 
 ### Theme {string}
