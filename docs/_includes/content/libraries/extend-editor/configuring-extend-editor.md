@@ -98,6 +98,15 @@ Option | Description
 ------------ | -------------
 github | If set to true, than the user can connect to GitHub and select a file there for use as their extension. Defaults to false.
 
+```javascript
+// Enabling GitHub integration. 
+var options = {
+  integrations: {
+    github:true 
+  }
+}
+```
+
 ## Configuration Options
 
 ### Theme {string}
