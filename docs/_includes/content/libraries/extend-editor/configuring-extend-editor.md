@@ -87,7 +87,7 @@ Determines which panels will be expanded when Extend Editor is displayed.
 Option | Description
 ------------ | -------------
 [left](#expandleft-string) | Determines which panel will be expanded at left. Allowed values are `explorer`, `secrets`, `meta`, `dependencies`, `github`, `scheduler`, `templates`.
-[right](#expandright-string) | Determiens which panel will be expanded at right. Allowed value `runner`.
+[right](#expandright-string) | Determines which panel will be expanded at right. Allowed value `runner`.
 [bottom](#expandbottom-string) | Determines which panel will be expanded at bottom. Allowed value `logs`.
 
 ### Integration Options
