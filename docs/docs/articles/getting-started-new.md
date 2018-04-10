@@ -3,7 +3,7 @@ title:  Getting Started (2)
 layout: default
 root: true
 permalink: docs/getting-started-new
-collection: "Articles2"
+collection: "Articles"
 --- 
 
 ## Getting Started
@@ -208,3 +208,43 @@ Basically all we've done here is change the URL and add authorization informatio
 Save your work, restart the server, and test out your change by creating a new lead.
 
 ![Alt text](/docs/docs/assets/img/zerocrm8.png)
+
+### Testing and Logging
+
+As we mentioned above, the Extend editor is *incredibly* powerful and customizable. Let's look at just two of those features, but two of which may be really useful to you when you are just beginning.
+
+The first is the "Show Logs" button:
+
+![Alt text](/docs/docs/assets/img/zerocrm9.png)
+
+Clicking it opens a panel at the bottom:
+
+![Alt text](/docs/docs/assets/img/zerocrm10.png)
+
+Make note of the two icons on the right. You will most likely *always* make use of `autoscroll` and the trash can will clear up the current output. Quickly modify the extension code to add some logging:
+
+```js
+module.exports = function(context, cb) {
+	var lead = context.body;
+	console.log('lead', JSON.stringify(lead));
+	if(lead.value > 1000) lead.vip = true;
+	
+	cb(null, { lead:lead });
+};
+```
+
+Save the extension and then open up the "Leads" link in a new tab. Enter some values, submit, and you'll see the log panel update:
+
+![Alt text](/docs/docs/assets/img/zerocrm11.png)
+
+Another useful feature is the "Runner":
+
+![Alt text](/docs/docs/assets/img/zerocrm12.png)
+
+Clicking this button opens a powerful testing utility that will perform network calls against the endpoint. To test, open the runner up and change the method type to POST. Under Body, set the type to JSON and enter a test value.
+
+![Alt text](/docs/docs/assets/img/zerocrm13.png)
+
+Click run and you'll see the output of your extension. You can also keep that Logs panel open as well to see any debugging you may have added.
+
+![Alt text](/docs/docs/assets/img/zerocrm13.png)
