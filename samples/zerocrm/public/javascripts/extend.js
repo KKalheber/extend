@@ -154,7 +154,7 @@ function createRuntimeConfig(options) {
                 meta: {
                     'wt-compiler': '@webtask/middleware-compiler',
                     'wt-middleware': '@webtask/bearer-auth-middleware,@auth0extend/zerocrm-middleware',
-                    'wt-node-dependencies': '{"@webtask/middleware-compiler":"1.3.0","@webtask/bearer-auth-middleware":"1.2.1", "@auth0extend/zerocrm-middleware":"1.0.0"}',
+                    'wt-node-dependencies': '{"@webtask/middleware-compiler":"1.3.0","@webtask/bearer-auth-middleware":"1.2.1", "@auth0extend/zerocrm-middleware":"1.0.0", "clearbit":"1.3.3"}',
                     'wt-auth-secret': options.randomBytes,
                     'auth0-extension-type': options.extensibilityPoint,
                     'wt-editor-linter': 'disabled'

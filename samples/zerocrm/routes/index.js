@@ -7,7 +7,6 @@ var extend = require('../lib/extend');
 var config = require('../lib/config');
 var path = require('path');
 var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
 
 router.set('views', path.join(__dirname, '..', 'views'));
 router.set('view engine', 'ejs');
