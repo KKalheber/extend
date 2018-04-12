@@ -32,4 +32,4 @@ Auth0 Extend has been designed to support code-based extensibility in multi-tena
 ZEROCRM_TENANT=tenant1
 ```
 
-**NOTE** if you are using the [free trial of Auth0 Extend](https://auth0.com/extend/try), your account is **single-tenant** and cannot be used with arbitrary tenant names. In this case, please leave the ZEROCRM_TENANT environment variable set to the default value.
+**NOTE** if you are using the [free trial of Auth0 Extend](https://auth0.com/extend/try), your account is **single-tenant** and cannot be used with arbitrary tenant names. In this case, please set the ZEROCRM_TENANT environment variable to the same value as {webtask_container}.
